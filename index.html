@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Nafis Nirob is a student, social media executive, GFX designer and community manager from Rangpur, Bangladesh.">
+  <meta name="author" content="Nafis Islam Nirob">
+  <meta property="og:title" content="Nafis Nirob | On My Journey">
+  <meta property="og:description" content="A personal portfolio exploring social media, design, communities and digital ventures.">
+  <meta property="og:type" content="website">
+  <title>Nafis Nirob | On My Journey</title>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader" aria-label="Loading portfolio">
+    <div class="preloader-inner">
+      <div class="preloader-mark">N<span>.</span></div>
+      <div class="loader-track"><span id="loaderProgress"></span></div>
+      <div class="loader-meta">
+        <span>INITIALIZING EXPERIENCE</span>
+        <span id="loaderPercent">00%</span>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand magnetic" href="#home" aria-label="Nafis Nirob home">
+        <span class="brand-symbol">N<span>.</span></span>
+        <span class="brand-text">NAFIS<span>NIROB</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#ventures">Ventures</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="language-toggle" id="languageToggle"
+          type="button" aria-label="Switch to Bangla">বাংলা</button>
+      </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero section-shell" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="eyebrow-dot"></span>
+            STUDENT · CREATOR · BUILDER
+          </p>
+
+          <p class="hero-kicker reveal">HELLO, I'M</p>
+
+          <h1 class="hero-title reveal">
+            Nafis<br>
+            <span class="gradient-word">Nirob</span><span class="title-period">.</span>
+          </h1>
+
+          <div class="hero-subtitle reveal">
+            <span class="line"></span>
+            <span>ON MY JOURNEY!</span>
+          </div>
+
+          <p class="hero-description reveal"
+            data-en="A student and digital enthusiast exploring social media, creative design, community building and new ideas. I enjoy learning by creating, collaborating and turning possibilities into meaningful work."
+            data-bn="আমি একজন শিক্ষার্থী ও ডিজিটাল উৎসাহী। সোশ্যাল মিডিয়া, ক্রিয়েটিভ ডিজাইন, কমিউনিটি তৈরি এবং নতুন ধারণা নিয়ে কাজ করতে ভালোবাসি। শেখা, তৈরি করা ও একসাথে কাজ করার মধ্য দিয়ে এগিয়ে যেতে চাই।">
+            A student and digital enthusiast exploring social media, creative design, community building and new ideas. I enjoy learning by creating, collaborating and turning possibilities into meaningful work.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary magnetic" href="#projects">
+              <span>Explore my work</span>
+              <span class="button-arrow">↗</span>
+            </a>
+
+            <a class="button button-ghost magnetic" href="#contact">
+              Contact me <span>↗</span>
+            </a>
+          </div>
+
+          <div class="hero-socials reveal" aria-label="Social profiles">
+            <a href="https://www.facebook.com/share/1DxXMwtdPf/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+            <a href="https://github.com/nafisnirob14" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://youtube.com/@slayerxxx2026?si=IJxOq2CqHd8unnWJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+            <a href="https://www.instagram.com/lwky._.nirob?obrf=anFreWFtaW9yb2ll" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+            <a href="https://discord.gg/qNhBYMPU" target="_blank" rel="noopener noreferrer" aria-label="Discord">DC</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-index" aria-hidden="true">NN / DIGITAL PORTFOLIO</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>IDEAS INTO ACTION</span><b>✳</b>
+        <span>DESIGN WITH PURPOSE</span><b>✳</b>
+        <span>BUILD COMMUNITIES</span><b>✳</b>
+        <span>ALWAYS LEARNING</span><b>✳</b>
+        <span>IDEAS INTO ACTION</span><b>✳</b>
+        <span>DESIGN WITH PURPOSE</span><b>✳</b>
+        <span>BUILD COMMUNITIES</span><b>✳</b>
+        <span>ALWAYS LEARNING</span><b>✳</b>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section-shell section-pad" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / ABOUT</p>
+          <h2>Curious by nature.<br>
+            <span class="muted-heading">Driven to create.</span>
+          </h2>
+          <p class="section-intro">A little about who I am and what keeps me moving.</p>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-panel panel reveal">
+            <span class="small-label">WHO AM I?</span>
+            <h3>Learning today.<br>
+              <span class="gradient-word">Building tomorrow.</span>
+            </h3>
+
+            <p data-en="My name is Nafis Islam Nirob. I am a high-school student from the Rangpur region of Bangladesh, interested in the intersection of creativity, technology and digital communities. I enjoy photography, gaming and Minecraft BedWars, while exploring opportunities to develop my creative and professional skills."
+              data-bn="আমার নাম নাফিস ইসলাম নিরব। আমি বাংলাদেশের রংপুর অঞ্চলের একজন উচ্চমাধ্যমিক পর্যায়ের শিক্ষার্থী। সৃজনশীলতা, প্রযুক্তি ও ডিজিটাল কমিউনিটির সংযোগস্থল নিয়ে আমার আগ্রহ রয়েছে। ফটোগ্রাফি, গেমিং এবং Minecraft BedWars আমার পছন্দের বিষয়।">
+              My name is Nafis Islam Nirob. I am a high-school student from the Rangpur region of Bangladesh, interested in the intersection of creativity, technology and digital communities. I enjoy photography, gaming and Minecraft BedWars, while exploring opportunities to develop my creative and professional skills.
+            </p>
+
+            <p data-en="My goal is to provide the best possible service to clients and teams through creativity, communication, leadership and consistent improvement. I value reliability, collaboration and learning from every experience."
+              data-bn="সৃজনশীলতা, যোগাযোগ, নেতৃত্ব এবং ধারাবাহিক উন্নতির মাধ্যমে ক্লায়েন্ট ও টিমকে সর্বোত্তম সেবা দেওয়াই আমার লক্ষ্য। নির্ভরযোগ্যতা, সহযোগিতা এবং প্রতিটি অভিজ্ঞতা থেকে শেখাকে গুরুত্ব দিই।">
+              My goal is to provide the best possible service to clients and teams through creativity, communication, leadership and consistent improvement. I value reliability, collaboration and learning from every experience.
+            </p>
+
+            <div class="objective-strip">
+              <span class="objective-mark">✳</span>
+              <span><b>My approach</b> — Stay curious, communicate clearly, take responsibility and keep improving.</span>
+            </div>
+          </article>
+
+          <aside class="about-aside">
+            <div class="stat-panel panel reveal">
+              <span class="stat-number">03<span>+</span></span>
+              <span class="stat-caption">
+                YEARS OF EXPERIENCE<br>
+                <small>As stated in my experience background</small>
+              </span>
+            </div>
+
+            <div class="detail-panel panel reveal">
+              <span class="small-label">BASED IN</span>
+              <h3>Rangpur</h3>
+              <p>Bangladesh</p>
+              <div class="detail-rule"></div>
+              <span class="small-label">CURRENT STATUS</span>
+              <h3>Student</h3>
+              <p>High school</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="interest-row reveal">
+          <span class="small-label">WHEN I'M NOT BUILDING</span>
+          <div class="interest-chips">
+            <span>Photography</span>
+            <span>Gaming</span>
+            <span>Minecraft BedWars</span>
+            <span>Exploring ideas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section-shell section-pad" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / EXPERTISE</p>
+          <h2>Skills I bring<br>
+            <span class="muted-heading">to the table.</span>
+          </h2>
+          <p class="section-intro">A growing toolkit shaped by practice, collaboration and curiosity.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card panel reveal">
+            <span class="skill-id">01</span>
+            <span class="skill-glyph">◎</span>
+            <h3>Social Media Management</h3>
+            <p>Planning, coordinating and supporting content and platform activity.</p>
+            <div class="tag-list">
+              <span>Facebook</span><span>Instagram</span><span>X</span><span>Twitch</span><span>TikTok</span>
+            </div>
+          </article>
+
+          <article class="skill-card panel reveal">
+            <span class="skill-id">02</span>
+            <span class="skill-glyph">✳</span>
+            <h3>GFX & Graphic Design</h3>
+            <p>Visual communication and graphic concepts for digital communities and projects.</p>
+            <div class="tag-list">
+              <span>GFX</span><span>2D art</span><span>2.5D art</span><span>Visual design</span>
+            </div>
+          </article>
+
+          <article class="skill-card panel reveal">
+            <span class="skill-id">03</span>
+            <span class="skill-glyph">⌘</span>
+            <h3>Community Management</h3>
+            <p>Helping communities stay organized, welcoming and active.</p>
+            <div class="tag-list">
+              <span>Moderation</span><span>Engagement</span><span>Coordination</span>
+            </div>
+          </article>
+
+          <article class="skill-card panel reveal">
+            <span class="skill-id">04</span>
+            <span class="skill-glyph">↗</span>
+            <h3>Tournament Management</h3>
+            <p>Supporting tournament planning, hosting and event coordination.</p>
+            <div class="tag-list">
+              <span>Hosting</span><span>Planning</span><span>Event support</span>
+            </div>
+          </article>
+
+          <article class="skill-card panel reveal">
+            <span class="skill-id">05</span>
+            <span class="skill-glyph">⌁</span>
+            <h3>Leadership & Teamwork</h3>
+            <p>Taking responsibility, working with teams and helping move shared goals forward.</p>
+            <div class="tag-list">
+              <span>Team leadership</span><span>Collaboration</span><span>Communication</span>
+            </div>
+          </article>
+
+          <article class="skill-card panel reveal">
+            <span class="skill-id">06</span>
+            <span class="skill-glyph">◇</span>
+            <h3>Digital Marketing</h3>
+            <p>Exploring digital promotion, audience engagement and online business operations.</p>
+            <div class="tag-list">
+              <span>Marketing</span><span>Social platforms</span><span>Strategy</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="platform-line reveal">
+          <span class="small-label">PLATFORMS & FOCUS AREAS</span>
+          <p>Facebook <i>·</i> Instagram <i>·</i> X <i>·</i> Twitch <i>·</i> TikTok <i>·</i> Gaming communities</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section-shell section-pad" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / EXPERIENCE</p>
+          <h2>Learning through<br>
+            <span class="muted-heading">real involvement.</span>
+          </h2>
+          <p class="section-intro">Roles and community responsibilities shared so far. No unverified dates or employment claims.</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-marker">01</div>
+            <div class="experience-body panel">
+              <div class="experience-meta">
+                <span>COMMUNITY LEADERSHIP</span>
+                <span>COMMUNITY ROLE</span>
+              </div>
+              <h3>Games Creator's of Bangladesh (GCB)</h3>
+              <h4>Co-founder & Admin</h4>
+              <p>Involved in helping build and manage a game-development creator community, supporting its members and community operations.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-marker">02</div>
+            <div class="experience-body panel">
+              <div class="experience-meta">
+                <span>COMMUNITY MODERATION</span>
+                <span>MODERATOR</span>
+              </div>
+              <h3>Minecraft Bangladesh</h3>
+              <h4>Moderator</h4>
+              <p>Supporting community moderation and helping maintain a constructive environment for members.</p>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-marker">03</div>
+            <div class="experience-body panel">
+              <div class="experience-meta">
+                <span>PROFESSIONAL FOCUS</span>
+                <span>ONGOING DEVELOPMENT</span>
+              </div>
+              <h3>Social Media & Creative Work</h3>
+              <h4>Social Media Executive · GFX Designer · Tournament Host</h4>
+              <p>Developing experience across social media activity, visual design, community management, event hosting and team coordination.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="fine-print reveal">
+          Experience duration: 3+ years, as provided. Specific employment dates and client engagements have not been supplied.
+        </p>
+      </div>
+    </section>
+
+    <!-- VENTURES -->
+    <section class="section-shell section-pad venture-section" id="ventures">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">04 / VENTURES</p>
+          <h2>Ideas beyond<br>
+            <span class="muted-heading">the portfolio.</span>
+          </h2>
+          <p class="section-intro">Business initiatives and brands I am involved with.</p>
+        </div>
+
+        <div class="venture-grid">
+          <article class="venture-card panel reveal">
+            <div class="venture-top">
+              <span>01 / GAME INDUSTRY</span><span class="venture-symbol">◈</span>
+            </div>
+            <h3>Aether Arc Games</h3>
+            <p>A game-industry venture focused on exploring game-related ideas and opportunities.</p>
+            <div class="venture-foot">
+              <span>GAMES</span><span>IN DEVELOPMENT / DETAILS TO COME</span>
+            </div>
+          </article>
+
+          <article class="venture-card panel reveal">
+            <div class="venture-top">
+              <span>02 / SOFTWARE</span><span class="venture-symbol">⌘</span>
+            </div>
+            <h3>Aether Arc Softwares</h3>
+            <p>A software-related venture exploring digital products and technology-focused ideas.</p>
+            <div class="venture-foot">
+              <span>SOFTWARE</span><span>DETAILS TO COME</span>
+            </div>
+          </article>
+
+          <article class="venture-card panel reveal">
+            <div class="venture-top">
+              <span>03 / CLOTHING</span><span class="venture-symbol">◇</span>
+            </div>
+            <h3>TRIOX</h3>
+            <p>A clothing business creating products for gaming audiences and broader fashion interests.</p>
+            <div class="venture-foot">
+              <span>APPAREL</span><span>DETAILS TO COME</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="leadership-note panel reveal">
+          <span class="small-label">BUSINESS & LEADERSHIP</span>
+          <p>Founder and leadership responsibilities across ventures, including the roles of <b>CFO, COO, CEO and Founder</b>, as provided.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-shell section-pad" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">05 / SELECTED WORK</p>
+          <h2>Projects &<br>
+            <span class="muted-heading">explorations.</span>
+          </h2>
+          <p class="section-intro">A space for work in digital marketing, creative production and product ideas.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card panel reveal">
+            <div class="project-art project-art-purple">
+              <span class="project-art-mark">A</span>
+              <span class="project-art-caption">DIGITAL / CREATIVE</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span>01 / CREATIVE & MARKETING</span><span>DETAILS PENDING</span>
+              </div>
+              <h3>Digital Marketing & Creative Work</h3>
+              <p>Experience areas include digital marketing, 2D art, 2.5D art and GFX design. Specific completed project details can be added here.</p>
+              <span class="project-status">PROJECT INFORMATION TO BE ADDED</span>
+            </div>
+          </article>
+
+          <article class="project-card panel reveal">
+            <div class="project-art project-art-green">
+              <span class="project-art-mark">B</span>
+              <span class="project-art-caption">PRODUCT / DIGITAL</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span>02 / PRODUCT & ADVISORY</span><span>DETAILS PENDING</span>
+              </div>
+              <h3>Marketing, Frontend & Advisory</h3>
+              <p>Areas of involvement include marketing, frontend work and advisory contributions. Add verified project scope and outcomes when available.</p>
+              <span class="project-status">PROJECT INFORMATION TO BE ADDED</span>
+            </div>
+          </article>
+
+          <article class="project-card panel reveal">
+            <div class="project-art project-art-beige">
+              <span class="project-art-mark">C</span>
+              <span class="project-art-caption">COMMUNITY / EVENTS</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span>03 / COMMUNITY</span><span>EXPERIENCE AREA</span>
+              </div>
+              <h3>Community & Tournament Operations</h3>
+              <p>Community administration, moderation and tournament hosting are part of my experience. Individual event case studies will be added when documented.</p>
+              <span class="project-status">CASE STUDY DETAILS TO BE ADDED</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="fine-print reveal">
+          These cards describe experience areas, not claims of specific completed client projects or awards.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="section-shell section-pad social-section" id="social">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">06 / FIND ME ONLINE</p>
+          <h2>Let's connect<br>
+            <span class="muted-heading">across platforms.</span>
+          </h2>
+          <p class="section-intro">The links below use the profile URLs provided.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card panel magnetic reveal" href="https://www.facebook.com/share/1DxXMwtdPf/" target="_blank" rel="noopener noreferrer">
+            <span class="social-code">FB</span>
+            <span><b>Facebook</b><small>Connect on Facebook</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <a class="social-card panel magnetic reveal" href="https://github.com/nafisnirob14" target="_blank" rel="noopener noreferrer">
+            <span class="social-code">GH</span>
+            <span><b>GitHub</b><small>Explore code and repositories</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <a class="social-card panel magnetic reveal" href="https://youtube.com/@slayerxxx2026?si=IJxOq2CqHd8unnWJ" target="_blank" rel="noopener noreferrer">
+            <span class="social-code">YT</span>
+            <span><b>YouTube</b><small>Visit my channel</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <a class="social-card panel magnetic reveal" href="https://www.instagram.com/lwky._.nirob?obrf=anFreWFtaW9yb2ll" target="_blank" rel="noopener noreferrer">
+            <span class="social-code">IG</span>
+            <span><b>Instagram</b><small>Follow on Instagram</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <a class="social-card panel magnetic reveal" href="https://discord.gg/qNhBYMPU" target="_blank" rel="noopener noreferrer">
+            <span class="social-code">DC</span>
+            <span><b>Discord</b><small>Join the Discord community</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-shell section-pad contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel panel reveal">
+          <div class="contact-copy">
+            <p class="section-index">07 / CONTACT</p>
+            <h2>Have an idea?<br><span>Let's talk.</span></h2>
+            <p>For collaboration, business discussions or a conversation about creative and digital work, feel free to reach out.</p>
+            <a class="button button-primary magnetic" href="mailto:nafisnirob14@gmail.com?subject=Portfolio%20Enquiry">
+              Email me <span class="button-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-icon">✉</span>
+              <div>
+                <small>EMAIL</small>
+                <a href="mailto:nafisnirob14@gmail.com">nafisnirob14@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-icon">⌕</span>
+              <div>
+                <small>PHONE</small>
+                <a href="tel:+8801862959618">+880 1862-959618</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-icon">⌖</span>
+              <div>
+                <small>LOCATION</small>
+                <p>Rangpur, Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-icon">↗</span>
+              <div>
+                <small>COLLABORATION</small>
+                <p>Open to business collaboration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <a class="brand" href="#home">
+        <span class="brand-symbol">N<span>.</span></span>
+        <span class="brand-text">NAFIS<span>NIROB</span></span>
+      </a>
+      <p>Learning, creating and moving forward.</p>
+      <a class="back-top magnetic" href="#home" aria-label="Back to top">↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> Nafis Islam Nirob. All rights reserved.</span>
+      <span>DESIGNED WITH INTENTION <i>✳</i></span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+<!-- ==========================================
+     DEVELOPER UNIVERSE
+     Five functional interactive features
+=========================================== -->
+
+<div id="dev-universe">
+
+  <!-- FLOATING LAUNCHER -->
+  <button id="du-launcher" type="button">
+    <span>⌘</span>
+    <span>Developer OS</span>
+  </button>
+
+  <!-- DESKTOP ENVIRONMENT -->
+  <div id="du-desktop" aria-hidden="true">
+
+    <div class="du-desktop-header">
+      <span>DEVELOPER UNIVERSE</span>
+      <span id="du-desktop-clock">00:00</span>
+      <button id="du-desktop-exit" type="button">×</button>
+    </div>
+
+    <div class="du-icons">
+
+      <button class="du-icon" data-app="terminal">
+        <span>⌨️</span>
+        Terminal
+      </button>
+
+      <button class="du-icon" data-app="playground">
+        <span>💻</span>
+        Playground
+      </button>
+
+      <button class="du-icon" data-app="achievements">
+        <span>🏆</span>
+        Achievements
+      </button>
+
+      <button class="du-icon" data-app="about">
+        <span>👨‍💻</span>
+        About
+      </button>
+
+    </div>
+
+    <!-- TERMINAL WINDOW -->
+    <section class="du-window" id="du-terminal-window"
+             data-title="Mission Control" hidden>
+
+      <header class="du-window-header">
+        <span>⌨ MISSION CONTROL</span>
+        <div>
+          <button data-action="minimize">−</button>
+          <button data-action="maximize">□</button>
+          <button data-action="close">×</button>
+        </div>
+      </header>
+
+      <div class="du-window-body du-terminal-body">
+        <div id="du-terminal-output">
+          <p>DEVELOPER MISSION CONTROL v1.0</p>
+          <p>System initialized successfully.</p>
+          <p>Type <strong>help</strong> to see available commands.</p>
+        </div>
+
+        <form id="du-terminal-form">
+          <label for="du-terminal-input">visitor@portfolio:~$</label>
+          <input id="du-terminal-input"
+                 type="text"
+                 autocomplete="off"
+                 spellcheck="false"
+                 placeholder="Enter command...">
+        </form>
+      </div>
+
+    </section>
+
+    <!-- CODE PLAYGROUND WINDOW -->
+    <section class="du-window" id="du-playground-window"
+             data-title="Code Playground" hidden>
+
+      <header class="du-window-header">
+        <span>💻 LIVE CODE PLAYGROUND</span>
+        <div>
+          <button data-action="minimize">−</button>
+          <button data-action="maximize">□</button>
+          <button data-action="close">×</button>
+        </div>
+      </header>
+
+      <div class="du-window-body du-playground-body">
+
+        <div class="du-editor-tabs">
+          <button class="du-tab active" data-language="html">HTML</button>
+          <button class="du-tab" data-language="css">CSS</button>
+          <button class="du-tab" data-language="js">JavaScript</button>
+        </div>
+
+        <textarea id="du-code-editor"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  autocomplete="off"
+                  aria-label="Code editor"></textarea>
+
+        <div class="du-editor-actions">
+          <button id="du-run-code" type="button">▶ Run Code</button>
+          <button id="du-reset-code" type="button">↻ Reset</button>
+        </div>
+
+        <div class="du-preview-title">LIVE PREVIEW</div>
+
+        <iframe id="du-code-preview"
+                title="Code playground preview"
+                sandbox="allow-scripts"
+                referrerpolicy="no-referrer"></iframe>
+
+      </div>
+
+    </section>
+
+    <!-- ACHIEVEMENTS WINDOW -->
+    <section class="du-window" id="du-achievements-window"
+             data-title="Achievements" hidden>
+
+      <header class="du-window-header">
+        <span>🏆 ACHIEVEMENT CENTER</span>
+        <div>
+          <button data-action="minimize">−</button>
+          <button data-action="maximize">□</button>
+          <button data-action="close">×</button>
+        </div>
+      </header>
+
+      <div class="du-window-body du-achievement-body">
+
+        <h2>Visitor Achievements</h2>
+        <p>Explore the portfolio to unlock achievements.</p>
+
+        <div class="du-xp-card">
+          <span>YOUR EXPERIENCE POINTS</span>
+          <strong id="du-xp">0 XP</strong>
+          <div class="du-xp-track">
+            <div id="du-xp-progress"></div>
+          </div>
+          <span id="du-level">Level 1 Explorer</span>
+        </div>
+
+        <div id="du-badges"></div>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT WINDOW -->
+    <section class="du-window" id="du-about-window"
+             data-title="About Developer" hidden>
+
+      <header class="du-window-header">
+        <span>👨‍💻 DEVELOPER PROFILE</span>
+        <div>
+          <button data-action="minimize">−</button>
+          <button data-action="maximize">□</button>
+          <button data-action="close">×</button>
+        </div>
+      </header>
+
+      <div class="du-window-body du-about-body">
+        <h2>Welcome to my digital universe.</h2>
+        <p>Explore my portfolio, discover my projects,
+           and experiment with the interactive tools.</p>
+        <p>This desktop is an interactive extension
+           of my portfolio.</p>
+        <button data-open-app="terminal">Open Terminal</button>
+        <button data-open-app="playground">Try Playground</button>
+      </div>
+
+    </section>
+
+    <!-- DESKTOP TASKBAR -->
+    <footer class="du-taskbar">
+      <button id="du-start-button" type="button">⌘ START</button>
+      <div id="du-taskbar-apps"></div>
+      <span id="du-taskbar-time">00:00</span>
+    </footer>
+
+  </div>
+
+  <!-- SECRET EASTER EGG -->
+  <div id="du-secret" aria-hidden="true">
+    <div class="du-secret-content">
+      <span>SECRET PROTOCOL UNLOCKED</span>
+      <h2>YOU FOUND THE HIDDEN WORLD.</h2>
+      <p>Curiosity is a developer's greatest superpower.</p>
+      <button id="du-secret-close" type="button">RETURN</button>
+    </div>
+  </div>
+
+</div></body>
+</html>
